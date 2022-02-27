@@ -12,9 +12,16 @@ namespace CarRentApp
 {
     public partial class MainForm : Form
     {
+        private string car;
         public MainForm()
         {
             InitializeComponent();
+            car = "Dacia";
+        }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            lCar.Text = lCar.Text + " " + car;
         }
 
         private void MainForm_Load(object sender, EventArgs e)
