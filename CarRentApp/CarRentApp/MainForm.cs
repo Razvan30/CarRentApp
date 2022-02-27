@@ -16,5 +16,10 @@ namespace CarRentApp
         {
             InitializeComponent();
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("I'm here");
+        }
     }
 }
